@@ -1,0 +1,109 @@
+.header {
+  background-image: url("../../assets/images/header-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__inner {
+  position: relative;
+  padding: 1.25rem 4.375rem 11.5rem;
+}
+
+.header__logo {
+  flex-shrink: 0;
+  width: clamp(3rem, 5.2vw, 6.25rem);
+  aspect-ratio: 1;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  gap: 7.75rem;
+  margin-bottom: clamp(4rem, 7.91vw, 9.5rem);
+}
+
+.header__menu-list {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: clamp(1rem, 1.66vw, 2rem);
+}
+
+.header__menu-link {
+  text-wrap: nowrap;
+  font-size: clamp(1rem, 1.04vw, 1.25rem);
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 600;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: var(--main-radius);
+    bottom: 0;
+    display: block;
+    height: 2px;
+    width: 0;
+    background: currentColor;
+    transition: width var(--main-transition);
+  }
+
+  @media (hover: hover) {
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  &:active::after {
+    width: 100%;
+  }
+}
+
+.header__menu-link.active {
+  color: var(--color-brown-light);
+}
+
+.header__middle {
+  margin-bottom: clamp(2.5rem, 4.16vw, 5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.header__title {
+  font-family: var(--font-sansita-swashed), sans-serif;
+  font-size: clamp(2rem, 3.75vw, 4.5rem);
+  max-width: 26.5rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.header__bottom {
+  display: flex;
+  gap: 1.125rem;
+}
+
+@media (max-width: 48rem) {
+  .header__inner {
+    position: relative;
+    padding: 0.75rem 1rem 6rem;
+  }
+}
+
+@media (max-width: 35rem) {
+  .header__top {
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .header__menu-list {
+    grid-template-columns: repeat(2, auto);
+    text-align: right;
+  }
+
+  .header__bottom, .header__middle {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

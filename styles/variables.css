@@ -1,0 +1,21 @@
+:root {
+  --font-inter: 'Inter';
+  --font-poppins: 'Poppins';
+  --font-sansita-swashed: 'Sansita Swashed';
+
+  --color-black: #000;
+  --color-white: #fff;
+  --color-brown-light: #E9BD8C;
+  --color-brown: #933C24;
+  --color-brown-hover: #C24A29;
+  --color-light: #F5F5F5;
+  --color-dark: #111111;
+  --color-gray-light: #D9D9D9;
+  --color-gray: #5D5D5D;
+
+  --main-container-width: 70rem;
+  --main-radius: 0.5rem;
+  --circle-radius: 50%;
+
+  --main-transition: 0.3s;
+}
