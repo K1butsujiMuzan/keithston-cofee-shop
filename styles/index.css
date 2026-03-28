@@ -1,9 +1,9 @@
-@import "./normalize.css";
-@import "./fonts.css";
-@import "./variables.css";
-@import "./blocks/header.css";
-@import "./blocks/hero.css";
-@import "./blocks/top-products.css";
+@import "/styles/normalize.css";
+@import "/styles/fonts.css";
+@import "/styles/variables.css";
+@import "/styles/blocks/header.css";
+@import "/styles/blocks/hero.css";
+@import "/styles/blocks/top-products.css";
 
 a {
   text-decoration: none;
