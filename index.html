@@ -18,78 +18,271 @@
 </head>
 <body class="body">
   <header class="header">
-    <div class="header__inner">
-      <div class="header__top">
-        <a
-          class="header__logo logo"
-          href="./index.html"
+    <div class="header__inner container">
+      <a
+        class="header__logo logo"
+        href="#"
+        aria-label="Keithston logo"
+      >
+        <svg
+          aria-hidden="true"
+          role="img"
+          class="logo__image"
+          width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
         >
-          <img
-            class="logo__image"
-            src="assets/images/logo.png"
-            alt="Keithston logo"
-            width="360"
-            height="360"
-          />
-        </a>
-        <nav class="header__menu">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
-              <a
-                class="header__menu-link active"
-                href="./index.html"
-              >
-                Home
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a
-                class="header__menu-link"
-                href="./index.html"
-              >
-                Blog
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a
-                class="header__menu-link"
-                href="./index.html"
-              >
-                Contact Us
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a
-                class="header__menu-link"
-                href="./index.html"
-              >
-                Services
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header__middle">
-        <span class="accent-text">Delicious Cafe</span>
-        <h1 class="header__title">
-          Sweet Treats, Perfect Eats
-        </h1>
-      </div>
-      <div class="header__bottom">
+          <g clip-path="url(#clip0_3046_176)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7552 6.89619C31.354 7.0904 31.7605 7.6464 31.7634 8.27593C31.7754 8.55218 31.7763 8.77701 31.7763 8.77701C31.7763 8.77701 31.7667 16.4436 22.6891 23.5011C18.9964 26.3721 15.7936 31.0389 14.9571 35.4022C14.8471 35.9857 14.3955 36.4455 13.8137 36.5651C13.232 36.6848 12.6357 36.441 12.3041 35.9473C9.71711 32.1137 6.78332 24.9492 11.6755 16.4651C16.0869 8.81544 24.2318 4.90353 30.7552 6.89619ZM28.8232 9.30641C23.2106 8.61032 17.706 12.0201 14.2736 17.9651C11.5473 22.6871 12.0733 28.0492 13.4101 31.5958C14.5139 28.31 16.6651 24.3844 20.8481 21.1322C26.178 16.9885 28.2505 11.5929 28.8232 9.30641Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9693 40.664C17.3436 40.4638 16.9174 39.8835 16.9148 39.2264C16.9023 38.9706 16.9009 38.7689 16.9009 38.7689C16.9009 38.7689 16.9105 31.1023 25.9882 24.0449C29.6478 21.1998 32.8259 16.5906 33.697 12.2619C33.8175 11.6586 34.29 11.1867 34.8942 11.0687C35.4988 10.9501 36.1147 11.2078 36.4538 11.7214C39.0216 15.5838 41.8422 22.6864 37.0018 31.0808C32.6006 38.7113 24.4853 42.6229 17.9693 40.664ZM19.854 38.2395C25.4667 38.9356 30.9713 35.5259 34.4037 29.5808C37.1299 24.8588 36.604 19.4967 35.2672 15.9502C34.1634 19.236 32.0122 23.1616 27.8291 26.4138C22.4992 30.5575 20.4267 35.9531 19.854 38.2395Z" fill="black"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_3046_176">
+              <rect width="48" height="48" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <nav class="header__menu">
+        <ul class="header__menu-list" data-js-header-menu-list>
+          <li class="header__menu-item">
+            <a
+              class="header__menu-link header__menu-link--active"
+              href="#"
+            >
+              Home
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a
+              class="header__menu-link"
+              href="#"
+            >
+              Blog
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a
+              class="header__menu-link"
+              href="#"
+            >
+              Contact Us
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a
+              class="header__menu-link"
+              href="#"
+            >
+              Services
+            </a>
+          </li>
+        </ul>
         <a
-          class="header__link link"
-          href="./index.html"
+          class="header__menu-basket"
+          href="index.html"
+          aria-label="basket"
         >
-          Shop Now
+          <svg
+            aria-hidden="true"
+            role="img"
+            width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.9998 12H26.0465L21.1132 4.59332C20.9169 4.29911 20.6118 4.09491 20.265 4.02565C19.9182 3.95638 19.558 4.02773 19.2638 4.22399C18.9696 4.42025 18.7654 4.72535 18.6962 5.07216C18.6269 5.41898 18.6982 5.77911 18.8945 6.07332L22.8425 12H9.15717L13.1092 6.07332C13.3054 5.77911 13.3768 5.41898 13.3075 5.07216C13.2382 4.72535 13.0341 4.42025 12.7398 4.22399C12.4456 4.02773 12.0855 3.95638 11.7387 4.02565C11.3919 4.09491 11.0868 4.29911 10.8905 4.59332L5.95317 12H3.99984C3.64622 12 3.30708 12.1405 3.05703 12.3905C2.80698 12.6406 2.6665 12.9797 2.6665 13.3333C2.6665 13.6869 2.80698 14.0261 3.05703 14.2761C3.30708 14.5262 3.64622 14.6667 3.99984 14.6667H5.33317V25.3333C5.33317 26.0406 5.61412 26.7188 6.11422 27.2189C6.61432 27.719 7.29259 28 7.99984 28H23.9998C24.7071 28 25.3854 27.719 25.8855 27.2189C26.3856 26.7188 26.6665 26.0406 26.6665 25.3333V14.6667H27.9998C28.3535 14.6667 28.6926 14.5262 28.9426 14.2761C29.1927 14.0261 29.3332 13.6869 29.3332 13.3333C29.3332 12.9797 29.1927 12.6406 28.9426 12.3905C28.6926 12.1405 28.3535 12 27.9998 12ZM11.9998 23.3333C11.9998 23.6869 11.8594 24.0261 11.6093 24.2761C11.3593 24.5262 11.0201 24.6667 10.6665 24.6667C10.3129 24.6667 9.97374 24.5262 9.72369 24.2761C9.47365 24.0261 9.33317 23.6869 9.33317 23.3333V18C9.33317 17.6464 9.47365 17.3072 9.72369 17.0572C9.97374 16.8071 10.3129 16.6667 10.6665 16.6667C11.0201 16.6667 11.3593 16.8071 11.6093 17.0572C11.8594 17.3072 11.9998 17.6464 11.9998 18V23.3333ZM17.3332 23.3333C17.3332 23.6869 17.1927 24.0261 16.9426 24.2761C16.6926 24.5262 16.3535 24.6667 15.9998 24.6667C15.6462 24.6667 15.3071 24.5262 15.057 24.2761C14.807 24.0261 14.6665 23.6869 14.6665 23.3333V18C14.6665 17.6464 14.807 17.3072 15.057 17.0572C15.3071 16.8071 15.6462 16.6667 15.9998 16.6667C16.3535 16.6667 16.6926 16.8071 16.9426 17.0572C17.1927 17.3072 17.3332 17.6464 17.3332 18V23.3333ZM22.6665 23.3333C22.6665 23.6869 22.526 24.0261 22.276 24.2761C22.0259 24.5262 21.6868 24.6667 21.3332 24.6667C20.9795 24.6667 20.6404 24.5262 20.3904 24.2761C20.1403 24.0261 19.9998 23.6869 19.9998 23.3333V18C19.9998 17.6464 20.1403 17.3072 20.3904 17.0572C20.6404 16.8071 20.9795 16.6667 21.3332 16.6667C21.6868 16.6667 22.0259 16.8071 22.276 17.0572C22.526 17.3072 22.6665 17.6464 22.6665 18V23.3333Z" fill="black"/>
+          </svg>
+
         </a>
-        <a
-          class="header__link link link--transparent"
-          href="./index.html"
+        <button
+          class="header__burger-button"
+          type="button"
+          data-js-burger-button
         >
-          Learn More
-        </a>
-      </div>
+          <span class="header__burger-line"></span>
+        </button>
+      </nav>
     </div>
   </header>
+  <main class="main">
+    <section class="hero big-container">
+      <div class="hero__inner container">
+        <div class="hero__text">
+          <span class="accent-text">Delicious Cafe</span>
+          <h1 class="hero__title">
+            Sweet Treats, Perfect Eats
+          </h1>
+        </div>
+        <ul class="hero__list">
+          <li class="hero__list-item">
+            <a
+              class="hero__list-link link"
+              href="#"
+            >
+              Shop Now
+            </a>
+          </li>
+          <li class="hero__list-item">
+            <a
+              class="hero__list-link link link--transparent"
+              href="#"
+            >
+              Learn More
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <h2 class="section-title">Top Products</h2>
+    <section class="top-products container">
+      <article class="top-products__card card">
+        <div class="top-products__card-container">
+          <img
+            class="top-products__card-image"
+            src="./assets/images/products/cake-1.png"
+            alt=""
+            loading="lazy"
+          />
+        </div>
+        <div class="top-products__card-controls">
+          <div class="top-products__card-information">
+            <h3 class="top-products__card-title">Whole Grain Bread Whole Grain Bread Whole Grain Bread</h3>
+            <span class="top-products__card-price">$40</span>
+          </div>
+          <button
+            class="top-products__card-button"
+            type="button"
+          >
+            Add
+          </button>
+        </div>
+      </article>
+      <article class="top-products__card card">
+        <div class="top-products__card-container">
+          <img
+            class="top-products__card-image"
+            src="./assets/images/products/cake-1.png"
+            alt=""
+            width="360"
+            height="360"
+            loading="lazy"
+          />
+        </div>
+        <div class="top-products__card-controls">
+          <div class="top-products__card-information">
+            <h3 class="top-products__card-title">Whole Grain Bread</h3>
+            <span class="top-products__card-price">$40</span>
+          </div>
+          <button
+            class="top-products__card-button"
+            type="button"
+          >
+            Add
+          </button>
+        </div>
+      </article>
+      <article class="top-products__card card">
+        <div class="top-products__card-container">
+          <img
+            class="top-products__card-image"
+            src="./assets/images/products/cake-1.png"
+            alt=""
+            width="360"
+            height="360"
+            loading="lazy"
+          />
+        </div>
+        <div class="top-products__card-controls">
+          <div class="top-products__card-information">
+            <h3 class="top-products__card-title">Whole Grain Bread</h3>
+            <span class="top-products__card-price">$40</span>
+          </div>
+          <button
+            class="top-products__card-button"
+            type="button"
+          >
+            Add
+          </button>
+        </div>
+      </article>
+      <article class="top-products__card card">
+        <div class="top-products__card-container">
+          <img
+            class="top-products__card-image"
+            src="./assets/images/products/cake-1.png"
+            alt=""
+            width="360"
+            height="360"
+            loading="lazy"
+          />
+        </div>
+        <div class="top-products__card-controls">
+          <div class="top-products__card-information">
+            <h3 class="top-products__card-title">Whole Grain Bread</h3>
+            <span class="top-products__card-price">$40</span>
+          </div>
+          <button
+            class="top-products__card-button"
+            type="button"
+          >
+            Add
+          </button>
+        </div>
+      </article>
+      <article class="top-products__card card">
+        <div class="top-products__card-container">
+          <img
+            class="top-products__card-image"
+            src="./assets/images/products/cake-1.png"
+            alt=""
+            width="360"
+            height="360"
+            loading="lazy"
+          />
+        </div>
+        <div class="top-products__card-controls">
+          <div class="top-products__card-information">
+            <h3 class="top-products__card-title">Whole Grain Bread</h3>
+            <span class="top-products__card-price">$40</span>
+          </div>
+          <button
+            class="top-products__card-button"
+            type="button"
+          >
+            Add
+          </button>
+        </div>
+      </article>
+      <article class="top-products__card card">
+        <div class="top-products__card-container">
+          <img
+            class="top-products__card-image"
+            src="./assets/images/products/cake-1.png"
+            alt=""
+            width="360"
+            height="360"
+            loading="lazy"
+          />
+        </div>
+        <div class="top-products__card-controls">
+          <div class="top-products__card-information">
+            <h3 class="top-products__card-title">Whole Grain Bread</h3>
+            <span class="top-products__card-price">$40</span>
+          </div>
+          <div class="top-products__card-buttons">
+            <button
+              class="top-products__card-button"
+              type="button"
+            >
+              -1
+            </button>
+            <span class="top-products__card-quantity">1212</span>
+            <button
+              class="top-products__card-button"
+              type="button"
+            >
+              +1
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="./scripts/index.js" type="module"></script>
 </body>
 </html>

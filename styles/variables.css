@@ -13,8 +13,10 @@
   --color-gray-light: #D9D9D9;
   --color-gray: #5D5D5D;
 
-  --main-container-width: 70rem;
+  --main-container-width: 82.5rem;
+  --big-container-width: 92.5rem;
   --main-radius: 0.5rem;
+  --second-radius: 0.25rem;
   --circle-radius: 50%;
 
   --main-transition: 0.3s;

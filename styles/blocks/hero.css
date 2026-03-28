@@ -1,0 +1,45 @@
+.hero {
+  background-image: url("../../assets/images/header-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: clamp(5rem, 3.303rem + 7.2398vw, 10rem);
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 0.9819rem + 4.34389vw, 5rem);
+  margin: 0 auto;
+}
+
+.hero__text {
+  max-width: 26.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero__title {
+  font-family: var(--font-sansita-swashed), sans-serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 1.1515rem + 3.6199vw, 4.5rem);
+  line-height: 1.2;
+}
+
+.hero__list {
+  display: flex;
+  gap: 1.125rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 35rem) {
+  .hero__inner {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__list {
+    justify-content: center;
+  }
+}

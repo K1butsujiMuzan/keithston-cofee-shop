@@ -1,0 +1,279 @@
+[
+  {
+    "id": 1,
+    "title": "Artisan Sourdough Loaf",
+    "description": "Rye sourdough with a crispy crust and tender, slightly tangy crumb. 24-hour fermentation.",
+    "price": 6.50,
+    "image": "bread-1.png",
+    "type": "bread"
+  },
+  {
+    "id": 2,
+    "title": "Multigrain Boule",
+    "description": "Rustic round loaf with flaxseed, sunflower seeds, and sesame. Rich in fiber.",
+    "price": 5.90,
+    "image": "bread-2.png",
+    "type": "bread"
+  },
+  {
+    "id": 3,
+    "title": "Brioche Loaf",
+    "description": "Rich, buttery loaf made with eggs and high-quality butter. Perfect for toast or French sandwiches.",
+    "price": 7.20,
+    "image": "bread-3.png",
+    "type": "bread"
+  },
+
+  {
+    "id": 4,
+    "title": "Classic Carrot Cake",
+    "description": "Moist carrot sponge with walnuts, layered with cream cheese frosting. Topped with candied nuts.",
+    "price": 5.80,
+    "image": "cake-1.png",
+    "type": "cake"
+  },
+  {
+    "id": 5,
+    "title": "New York Cheesecake",
+    "description": "Dense, creamy cheesecake on a buttery graham cracker crust. Served with berry compote.",
+    "price": 6.50,
+    "image": "cake-2.png",
+    "type": "cake"
+  },
+  {
+    "id": 6,
+    "title": "Red Velvet Slice",
+    "description": "Velvety red cake paired with smooth cream cheese frosting. An American classic.",
+    "price": 5.90,
+    "image": "cake-3.png",
+    "type": "cake"
+  },
+  {
+    "id": 7,
+    "title": "Chocolate Fudge Brownie",
+    "description": "Rich, dense brownie with a chocolate filling and crackly top. For true chocoholics.",
+    "price": 4.50,
+    "image": "cake-4.png",
+    "type": "cake"
+  },
+  {
+    "id": 8,
+    "title": "Lemon Drizzle Loaf — $4.20",
+    "description": "Tender lemon cake soaked in a tangy syrup. Refreshing and bright.",
+    "price": 4.20,
+    "image": "cake-5.png",
+    "type": "cake"
+  },
+  {
+    "id": 9,
+    "title": "Blueberry Muffin Top",
+    "description": "Fluffy muffin loaded with fresh blueberries and topped with a crunchy streusel.",
+    "price": 4.80,
+    "image": "cake-6.png",
+    "type": "cake"
+  },
+  {
+    "id": 10,
+    "title": "Tiramisu",
+    "description": "Classic Italian dessert. Layers of espresso-soaked ladyfingers and mascarpone cream.",
+    "price": 6.20,
+    "image": "cake-7.png",
+    "type": "cake"
+  },
+  {
+    "id": 11,
+    "title": "Pistachio & Raspberry Tartlet",
+    "description": "Buttery tart shell filled with pistachio cream and topped with fresh raspberries.",
+    "price": 5.50,
+    "image": "cake-8.png",
+    "type": "cake"
+  },
+  {
+    "id": 12,
+    "title": "Double Chocolate Muffin",
+    "description": "Chocolate muffin studded with chunks of dark chocolate.",
+    "price": 4.90,
+    "image": "cake-9.png",
+    "type": "cake"
+  },
+  {
+    "id": 13,
+    "title": "Honey Cake",
+    "description": "Layered honey cake with thin, delicate layers and sour cream frosting. Soft and aromatic.",
+    "price": 5.80,
+    "image": "cake-10.png",
+    "type": "cake"
+  },
+  {
+    "id": 14,
+    "title": "Coconut & Lime Slice",
+    "description": "Exotic coconut bar with lime zest, topped with a white chocolate glaze.",
+    "price": 4.70,
+    "image": "cake-11.png",
+    "type": "cake"
+  },
+  {
+    "id": 15,
+    "title": "Apple Crumble Pie",
+    "description": "Pie with caramelized apples and a buttery crumb topping. Served warm.",
+    "price": 5.20,
+    "image": "cake-12.png",
+    "type": "cake"
+  },
+
+  {
+    "id": 16,
+    "title": "Espresso",
+    "description": "A pure, intense shot of 100% Arabica. Balanced acidity and rich crema.",
+    "price": 2.80,
+    "image": "coffee-1.png",
+    "type": "coffee"
+  },
+  {
+    "id": 17,
+    "title": "Americano",
+    "description": "Espresso diluted with hot water. Bold and smooth.",
+    "price": 3.80,
+    "image": "coffee-2.png",
+    "type": "coffee"
+  },
+  {
+    "id": 18,
+    "title": "Flat White",
+    "description": "Double espresso with velvety microfoam. Rich coffee flavor with creamy texture.",
+    "price": 4.90,
+    "image": "coffee-3.png",
+    "type": "coffee"
+  },
+  {
+    "id": 19,
+    "title": "Latte",
+    "description": "A smooth blend of espresso and steamed milk topped with a thin layer of foam.",
+    "price": 5.20,
+    "image": "coffee-4.png",
+    "type": "coffee"
+  },
+  {
+    "id": 20,
+    "title": "Cappuccino",
+    "description": "Balanced espresso with a thick, dense milk foam. Dusted with cocoa.",
+    "price": 5.00,
+    "image": "coffee-5.png",
+    "type": "coffee"
+  },
+  {
+    "id": 21,
+    "title": "Caffè Mocha",
+    "description": "Espresso combined with Belgian chocolate, steamed milk, and topped with whipped cream.",
+    "price": 5.60,
+    "image": "coffee-6.png",
+    "type": "coffee"
+  },
+  {
+    "id": 22,
+    "title": "Hot Chocolate",
+    "description": "Rich hot chocolate made with natural cocoa and creamy milk. Topped with mini marshmallows.",
+    "price": 5.50,
+    "image": "coffee-7.png",
+    "type": "coffee"
+  },
+
+  {
+    "id": 23,
+    "title": "Classic Butter Croissant",
+    "description": "Flaky, layered croissant made with high-quality butter. Crisp outside, tender inside.",
+    "price": 3.90,
+    "image": "croissants-1.png",
+    "type": "croissant"
+  },
+  {
+    "id": 24,
+    "title": "Almond Croissant",
+    "description": "Butter croissant filled with almond cream, topped with sliced almonds and powdered sugar.",
+    "price": 5.20,
+    "image": "croissants-2.png",
+    "type": "croissant"
+  },
+  {
+    "id": 25,
+    "title": "Ham & Cheese Croissant",
+    "description": "Flaky croissant filled with Parma ham and melted Gruyère cheese. Baked to golden perfection.",
+    "price": 5.80,
+    "image": "croissants-3.png",
+    "type": "croissant"
+  },
+
+  {
+    "id": 26,
+    "title": "Chocolate Chip Muffin",
+    "description": "Classic muffin loaded with semi-sweet chocolate chips. Soft and moist.",
+    "price": 4.50,
+    "image": "muffin-1.png",
+    "type": "muffin"
+  },
+  {
+    "id": 27,
+    "title": "Banana & Walnut Muffin",
+    "description": "Muffin made with ripe bananas and crunchy walnuts. Naturally sweet.",
+    "price": 4.50,
+    "image": "muffin-2.png",
+    "type": "muffin"
+  },
+  {
+    "id": 28,
+    "title": "Raspberry & White Chocolate Muffin",
+    "description": "Vanilla muffin with tart raspberries and sweet white chocolate chunks.",
+    "price": 4.80,
+    "image": "muffin-3.png",
+    "type": "muffin"
+  },
+  {
+    "id": 29,
+    "title": "Savory Spinach & Feta Muffin",
+    "description": "Hearty savory muffin with spinach, feta cheese, and sun-dried tomatoes. Sugar-free.",
+    "price": 4.70,
+    "image": "muffin-4.png",
+    "type": "muffin"
+  },
+
+  {
+    "id": 30,
+    "title": "Fruit Tart",
+    "description": "Buttery tart shell filled with vanilla pastry cream, topped with fresh seasonal berries and kiwi.",
+    "price": 6.20,
+    "image": "tart-1.png",
+    "type": "tart"
+  },
+  {
+    "id": 31,
+    "title": "Chocolate Ganache Tart",
+    "description": "Rich, silky dark chocolate ganache in a crunchy tart shell.",
+    "price": 6.00,
+    "image": "tart-1.png",
+    "type": "tart"
+  },
+  {
+    "id": 32,
+    "title": "Lemon Meringue Tart",
+    "description": "Tangy lemon curd in a crisp tart shell, topped with a lofty Italian meringue.",
+    "price": 5.90,
+    "image": "tart-1.png",
+    "type": "tart"
+  },
+  {
+    "id": 33,
+    "title": "Salted Caramel Pecan Tart",
+    "description": "Buttery tart filled with salted caramel and toasted pecans.",
+    "price": 6.50,
+    "image": "tart-1.png",
+    "type": "tart"
+  },
+  {
+    "id": 34,
+    "title": "Matcha Yuzu Tart",
+    "description": "Japanese-inspired tart with earthy matcha green tea base and bright yuzu citrus filling.",
+    "price": 5.80,
+    "image": "tart-1.png",
+    "type": "tart"
+  }
+]
