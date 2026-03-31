@@ -4,6 +4,8 @@
 @import "./blocks/header.css";
 @import "./blocks/hero.css";
 @import "./blocks/top-products.css";
+@import "blocks/information-sections.css";
+@import "blocks/basket-modal.css";
 
 a {
   text-decoration: none;
@@ -55,6 +57,28 @@ a {
   font-size: clamp(1rem, 0.83rem + 0.7239vw, 1.5rem);
   color: var(--color-brown-light);
   font-weight: 600;
+}
+
+.main-button {
+  border: none;
+  border-radius: var(--second-radius);
+  padding: 0.25rem 0.75rem;
+  background: var(--color-brown);
+  font-size: clamp(1rem, 0.83rem + 0.7239vw, 1.5rem);
+  color: var(--color-white);
+  font-weight: 500;
+  transition: background-color var(--main-transition), transform var(--main-transition);
+
+  @media (hover: hover) {
+    &:hover {
+      background: var(--color-brown-hover);
+    }
+  }
+
+  &:active {
+    background: var(--color-brown-hover);
+    transform: scale(0.97);
+  }
 }
 
 .link {

@@ -183,7 +183,7 @@
     "title": "Classic Butter Croissant",
     "description": "Flaky, layered croissant made with high-quality butter. Crisp outside, tender inside.",
     "price": 3.90,
-    "image": "croissants-1.png",
+    "image": "croissant-1.png",
     "type": "croissant"
   },
   {
@@ -191,7 +191,7 @@
     "title": "Almond Croissant",
     "description": "Butter croissant filled with almond cream, topped with sliced almonds and powdered sugar.",
     "price": 5.20,
-    "image": "croissants-2.png",
+    "image": "croissant-2.png",
     "type": "croissant"
   },
   {
@@ -199,7 +199,7 @@
     "title": "Ham & Cheese Croissant",
     "description": "Flaky croissant filled with Parma ham and melted Gruyère cheese. Baked to golden perfection.",
     "price": 5.80,
-    "image": "croissants-3.png",
+    "image": "croissant-3.png",
     "type": "croissant"
   },
 
@@ -249,7 +249,7 @@
     "title": "Chocolate Ganache Tart",
     "description": "Rich, silky dark chocolate ganache in a crunchy tart shell.",
     "price": 6.00,
-    "image": "tart-1.png",
+    "image": "tart-2.png",
     "type": "tart"
   },
   {
@@ -257,7 +257,7 @@
     "title": "Lemon Meringue Tart",
     "description": "Tangy lemon curd in a crisp tart shell, topped with a lofty Italian meringue.",
     "price": 5.90,
-    "image": "tart-1.png",
+    "image": "tart-3.png",
     "type": "tart"
   },
   {
@@ -265,7 +265,7 @@
     "title": "Salted Caramel Pecan Tart",
     "description": "Buttery tart filled with salted caramel and toasted pecans.",
     "price": 6.50,
-    "image": "tart-1.png",
+    "image": "tart-4.png",
     "type": "tart"
   },
   {
@@ -273,7 +273,7 @@
     "title": "Matcha Yuzu Tart",
     "description": "Japanese-inspired tart with earthy matcha green tea base and bright yuzu citrus filling.",
     "price": 5.80,
-    "image": "tart-1.png",
+    "image": "tart-5.png",
     "type": "tart"
   }
 ]

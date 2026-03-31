@@ -1,0 +1,39 @@
+.information-section{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 0.66rem + 1.4479vw, 2rem);
+  align-items: center;
+  text-align: center;
+}
+
+.first-order {
+  background-image: url("../../assets/images/first-order-background.png");
+  padding-block: clamp(2rem, 1.194rem + 3.4389vw, 4.375rem);
+}
+
+.information-section__title {
+  max-width: 21.5rem;
+  color: var(--color-brown);
+  font-size: clamp(1.5rem, 0.99rem + 2.17vw, 3rem);
+  font-family: var(--font-sansita-swashed), sans-serif;
+  font-weight: 500;
+}
+
+.information-section__text {
+  max-width: 21.5rem;
+  font-size: clamp(1rem, 0.83rem + 0.7239vw, 1.5rem);
+  color: var(--color-gray);
+}
+
+.basket-modal__information {
+
+}
+
+.basket-modal__controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
