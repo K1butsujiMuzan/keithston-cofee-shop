@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <link
+    rel="stylesheet"
+    href="./styles/index.css"
+  >
+  <title>Keithston - Basket</title>
+  <meta name="description" content="Keithston online coffee shop cart">
+</head>
+<body class="body">
+  <header class="header">
+    <div class="header__inner container">
+      <a
+        class="header__logo logo"
+        href="./index.html"
+        aria-label="Keithston logo"
+      >
+        <svg
+          aria-hidden="true"
+          role="img"
+          class="logo__image"
+          width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_3046_176)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7552 6.89619C31.354 7.0904 31.7605 7.6464 31.7634 8.27593C31.7754 8.55218 31.7763 8.77701 31.7763 8.77701C31.7763 8.77701 31.7667 16.4436 22.6891 23.5011C18.9964 26.3721 15.7936 31.0389 14.9571 35.4022C14.8471 35.9857 14.3955 36.4455 13.8137 36.5651C13.232 36.6848 12.6357 36.441 12.3041 35.9473C9.71711 32.1137 6.78332 24.9492 11.6755 16.4651C16.0869 8.81544 24.2318 4.90353 30.7552 6.89619ZM28.8232 9.30641C23.2106 8.61032 17.706 12.0201 14.2736 17.9651C11.5473 22.6871 12.0733 28.0492 13.4101 31.5958C14.5139 28.31 16.6651 24.3844 20.8481 21.1322C26.178 16.9885 28.2505 11.5929 28.8232 9.30641Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9693 40.664C17.3436 40.4638 16.9174 39.8835 16.9148 39.2264C16.9023 38.9706 16.9009 38.7689 16.9009 38.7689C16.9009 38.7689 16.9105 31.1023 25.9882 24.0449C29.6478 21.1998 32.8259 16.5906 33.697 12.2619C33.8175 11.6586 34.29 11.1867 34.8942 11.0687C35.4988 10.9501 36.1147 11.2078 36.4538 11.7214C39.0216 15.5838 41.8422 22.6864 37.0018 31.0808C32.6006 38.7113 24.4853 42.6229 17.9693 40.664ZM19.854 38.2395C25.4667 38.9356 30.9713 35.5259 34.4037 29.5808C37.1299 24.8588 36.604 19.4967 35.2672 15.9502C34.1634 19.236 32.0122 23.1616 27.8291 26.4138C22.4992 30.5575 20.4267 35.9531 19.854 38.2395Z" fill="black"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_3046_176">
+              <rect width="48" height="48" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <nav class="header__menu">
+        <ul class="header__menu-list" data-js-header-menu-list>
+          <li class="header__menu-item">
+            <a
+              class="header__menu-link header__menu-link--active"
+              href="./basket.html"
+            >
+              Basket
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a
+              class="header__menu-link"
+              href="./index.html"
+            >
+              Go to Home
+            </a>
+          </li>
+        </ul>
+        <button
+          class="header__burger-button"
+          type="button"
+          data-js-burger-button
+        >
+          <span class="header__burger-line"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="basket-main">
+    <section class="basket container">
+      <h1 class="page-title">Cart</h1>
+      <ul class="basket__list" data-js-basket-list></ul>
+      <div class="basket__footer">
+        <div class="basket__information">
+          <span class="basket__total-price">Total price: <span data-js-basket-price></span></span>
+          <span class="basket__total-quantity">Number of products <span data-js-basket-quantity></span></span>
+        </div>
+        <div class="basket__controls">
+          <button
+            data-js-basket-clear
+            class="basket-remove"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              role="img"
+              width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M3.75 6.00004H2.25C2.05109 6.00004 1.86032 5.92102 1.71967 5.78036C1.57902 5.63971 1.5 5.44895 1.5 5.25004C1.5 5.05112 1.57902 4.86036 1.71967 4.71971C1.86032 4.57905 2.05109 4.50004 2.25 4.50004H8.25V2.24854C8.25 2.04962 8.32902 1.85886 8.46967 1.71821C8.61032 1.57755 8.80109 1.49854 9 1.49854H15C15.1989 1.49854 15.3897 1.57755 15.5303 1.71821C15.671 1.85886 15.75 2.04962 15.75 2.24854V4.50004H21.75C21.9489 4.50004 22.1397 4.57905 22.2803 4.71971C22.421 4.86036 22.5 5.05112 22.5 5.25004C22.5 5.44895 22.421 5.63971 22.2803 5.78036C22.1397 5.92102 21.9489 6.00004 21.75 6.00004H20.25V21.75C20.25 21.9489 20.171 22.1397 20.0303 22.2804C19.8897 22.421 19.6989 22.5 19.5 22.5H4.5C4.30109 22.5 4.11032 22.421 3.96967 22.2804C3.82902 22.1397 3.75 21.9489 3.75 21.75V6.00004ZM14.25 4.50004V3.00004H9.75V4.50004H14.25ZM5.25 21H18.75V6.00004H5.25V21ZM9.75 18C9.55109 18 9.36032 17.921 9.21967 17.7804C9.07902 17.6397 9 17.4489 9 17.25V9.75004C9 9.55112 9.07902 9.36036 9.21967 9.21971C9.36032 9.07905 9.55109 9.00004 9.75 9.00004C9.94891 9.00004 10.1397 9.07905 10.2803 9.21971C10.421 9.36036 10.5 9.55112 10.5 9.75004V17.25C10.5 17.4489 10.421 17.6397 10.2803 17.7804C10.1397 17.921 9.94891 18 9.75 18ZM14.25 18C14.0511 18 13.8603 17.921 13.7197 17.7804C13.579 17.6397 13.5 17.4489 13.5 17.25V9.75004C13.5 9.55112 13.579 9.36036 13.7197 9.21971C13.8603 9.07905 14.0511 9.00004 14.25 9.00004C14.4489 9.00004 14.6397 9.07905 14.7803 9.21971C14.921 9.36036 15 9.55112 15 9.75004V17.25C15 17.4489 14.921 17.6397 14.7803 17.7804C14.6397 17.921 14.4489 18 14.25 18Z" fill="black"/>
+            </svg>
+          </button>
+          <button
+            data-js-basket-order
+            class="basket__order main-button"
+            type="button"
+          >
+            Order
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./scripts/basket-index.js" type="module"></script>
+</body>
+</html>

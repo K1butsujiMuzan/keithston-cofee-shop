@@ -14,7 +14,7 @@
   transition: opacity var(--main-transition), transform var(--main-transition);
   transition-behavior: allow-discrete;
   z-index: 20;
-  max-width: 25rem;
+  width: 25rem;
 
   @starting-style {
     opacity: 0;
@@ -22,7 +22,7 @@
   }
 }
 
-.basket-modal__empty {
+.basket-modal__list-empty {
   text-align: center;
   padding-block: 0.5rem;
 }
@@ -41,13 +41,13 @@
   align-items: center;
 }
 
-.basket-modal__image {
+.basket-modal__list-image {
   height: 3rem;
   width: 3rem;
   border-radius: var(--main-radius);
 }
 
-.basket-modal__title {
+.basket-modal__list-title {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -59,27 +59,6 @@
   align-items: center;
 }
 
-.basket-modal__total-price {
-  font-size: clamp(1rem, 0.83rem + 0.7239vw, 1.5rem);
-}
-
 .basket-modal__controls{
   display: flex;
-}
-
-.basket-modal__remove {
-  margin-left: auto;
-  padding: 0.25rem;
-  display: flex;
-  align-items: center;
-  aspect-ratio: 1;
-  background: transparent;
-  border: none;
-  transition: color var(--main-transition);
-
-  @media (hover: hover) {
-    &:hover {
-      color: var(--color-brown-light);
-    }
-  }
 }

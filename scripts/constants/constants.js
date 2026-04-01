@@ -1,6 +1,7 @@
 export const LOCAL_STORAGE_KEYS = {
   BASKET_KEY: 'basket',
-  TOTAL_PRICE: 'total-price'
+  TOTAL_PRICE: 'total-price',
+  TOTAL_QUANTITY: 'total-quantity'
 }
 
 export const BUTTON_TYPES = {

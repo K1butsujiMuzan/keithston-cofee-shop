@@ -20,13 +20,6 @@
   gap: 0.5rem;
 }
 
-.hero__title {
-  font-family: var(--font-sansita-swashed), sans-serif;
-  font-weight: 400;
-  font-size: clamp(2rem, 1.1515rem + 3.6199vw, 4.5rem);
-  line-height: 1.2;
-}
-
 .hero__list {
   display: flex;
   gap: 1.125rem;

@@ -1,8 +1,7 @@
-'use strict'
+import {BurgerMenu } from "./classes/burger-menu.js";
+import {Products} from "./classes/products.js";
+import {getProducts} from "./services/products.js";
 
-import {BurgerMenu } from "./burger-menu.js";
-import {Products} from "./products.js";
-
-new BurgerMenu ()
-const products = new Products()
-await products.getProducts()
+new BurgerMenu()
+const [products, categories] = await getProducts()
+new Products(products, categories)

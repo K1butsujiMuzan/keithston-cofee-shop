@@ -1,7 +1,6 @@
 import {ATTRIBUTES, BUTTON_TYPES} from "./constants.js";
 
-export const cardTemplate = (id, title, price, image, quantity) => {
-  return `
+export const cardTemplate = (id, title, price, image, quantity) => `
     <article class="top-products__card card" data-js-product-${id}>
         <div class="top-products__card-container">
           <img
@@ -49,5 +48,4 @@ export const cardTemplate = (id, title, price, image, quantity) => {
   }
         </div>
       </article>
-  `
-}
+`

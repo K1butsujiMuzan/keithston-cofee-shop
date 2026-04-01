@@ -1,53 +1,40 @@
-'use strict'
-
 import {
   ATTRIBUTES,
   BUTTON_TYPES,
-  LOCAL_STORAGE_KEYS,
-} from "./constants/constants.js";
-import {cardTemplate} from "./constants/card-template.js";
-import {basketEmpty, basketTemplate} from "./constants/basket-template.js";
+} from "../constants/constants.js";
+import {cardTemplate} from "../constants/card-template.js";
+import {basketModalEmpty, basketModalTemplate} from "../constants/basket-modal-template.js";
+import {
+  LocalStorage,
+} from "./local-storage.js";
 
 export class Products {
   selectors = {
     topProducts: '[data-js-top-products]',
-    basketContainer: '[data-js-basket]',
-    basketPrice: '[data-js-basket-price]',
-    basketOrder: '[data-js-basket-order]',
-    basketTotalQuantity: '[data-js-basket-total-quantity]',
-    basketClear: '[data-js-basket-clear]'
+    basketContainer: '[data-js-basket-modal-list]',
+    basketPrice: '[data-js-basket-modal-price]',
+    basketOrder: '[data-js-basket-modal-order]',
+    basketTotalQuantity: '[data-js-basket-modal-total-quantity]',
+    basketClear: '[data-js-basket-modal-clear]'
   }
 
-  constructor() {
+  constructor(products, categories) {
     this.topProductsContainer = document.querySelector(this.selectors.topProducts)
     this.basketContainer = document.querySelector(this.selectors.basketContainer)
     this.basketPriceContainer = document.querySelector(this.selectors.basketPrice)
-    this.basketTotalQuantity = document.querySelector(this.selectors.basketTotalQuantity)
+    this.basketTotalQuantityContainer = document.querySelector(this.selectors.basketTotalQuantity)
     this.basketOrder = document.querySelector(this.selectors.basketOrder)
     this.basketClear = document.querySelector(this.selectors.basketClear)
 
-    const basket = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEYS.BASKET_KEY)) ?? []
-    this.basket = basket?.map(item => ({id: Number(item.id), quantity: Number(item.quantity)}))
-    this.totalPrice = Number(localStorage.getItem(LOCAL_STORAGE_KEYS.TOTAL_PRICE)) ?? 0
-  }
+    const [basket, totalPrice, totalQuantity] = LocalStorage.getLocalStorageData()
+    this.basket = basket
+    this.totalPrice = totalPrice
+    this.totalQuantity = totalQuantity
 
-  getProducts = async () => {
-    try {
-      const response = await fetch('../products.json')
-      if(!response.ok) {
-        console.error('Something went wrong, status: ', response.status)
-        return
-      }
-      const data = await response.json()
-      if(Array.isArray(data)) {
-        this.products = data
-        const categories = new Set(data.map(item => item.type))
-        this.categories = [...categories.keys()]
-        this.bindEvents()
-      }
-    } catch (error) {
-      console.error(error)
-    }
+    this.products = products
+    this.categories = categories
+
+    this.bindEvents()
   }
 
   setTopProducts = () => {
@@ -59,21 +46,16 @@ export class Products {
     }).join('')
   }
 
-  updateLocalStorage = () => {
-    localStorage.setItem(LOCAL_STORAGE_KEYS.BASKET_KEY, JSON.stringify(this.basket))
-    localStorage.setItem(LOCAL_STORAGE_KEYS.TOTAL_PRICE, this.totalPrice)
-  }
-
   setBasket = () => {
     this.basketPriceContainer.innerHTML = `$${this.totalPrice}`
-    this.basketTotalQuantity.textContent = this.basket.reduce((sum, {quantity}) => sum + quantity, 0)
+    this.basketTotalQuantityContainer.textContent = String(this.totalQuantity)
     if(this.basket.length === 0) {
-      return this.basketContainer.innerHTML = basketEmpty
+      return this.basketContainer.innerHTML = basketModalEmpty
     }
     this.basketContainer.innerHTML = this.basket.map(({id, quantity}) => {
       const currentProduct = this.products.find(item => item.id === id)
       return [...Array(quantity)].map(_ => {
-        return basketTemplate(id, currentProduct.title, currentProduct.price, currentProduct.image)
+        return basketModalTemplate(id, currentProduct.title, currentProduct.price, currentProduct.image)
       }).join('')
     }).join('')
   }
@@ -84,7 +66,7 @@ export class Products {
     const currentProduct = this.basket.find(({id}) => id === productId)
     const currentProductPrice = this.products.find(product => product.id === productId).price
 
-    if(buttonType === BUTTON_TYPES.ADD && this.basket.reduce((sum, {quantity}) => sum + quantity, 0) >= 100) {
+    if(buttonType === BUTTON_TYPES.ADD && this.totalQuantity >= 100) {
       return alert('The number of items in the cart cannot be more than 100')
     }
 
@@ -113,8 +95,9 @@ export class Products {
       this.totalPrice -= currentProductPrice
     }
 
+    this.totalQuantity = this.basket.reduce((sum, {quantity}) => sum + quantity, 0)
     this.totalPrice = Number(this.totalPrice.toFixed(2))
-    this.updateLocalStorage()
+    LocalStorage.updateLocalStorage(this.basket, this.totalPrice, this.totalQuantity)
     this.setBasket()
     this.setTopProducts()
   }
@@ -135,7 +118,8 @@ export class Products {
   onBasketClear = () => {
     this.basket = []
     this.totalPrice = 0
-    this.updateLocalStorage()
+    this.totalQuantity = 0
+    LocalStorage.updateLocalStorage(this.basket, this.totalPrice, this.totalQuantity)
     this.setBasket()
     this.setTopProducts()
   }
@@ -153,3 +137,4 @@ export class Products {
     })
   }
 }
+

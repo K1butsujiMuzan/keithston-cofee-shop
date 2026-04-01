@@ -98,7 +98,7 @@
 }
 
 .header__menu-link.header__menu-link--active {
-  color: var(--color-brown-light);
+  color: var(--color-brown);
 }
 
 .header__burger-button {
