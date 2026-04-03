@@ -1,11 +1,11 @@
-import {ATTRIBUTES, BUTTON_TYPES} from "./constants.js";
+import {ATTRIBUTES, BUTTON_TYPES, imagePath} from "./constants.js";
 
 export const basketModalTemplate = (id, title, price, image) =>
   `
     <li class="basket-modal__list-item">
       <img
         class="basket-modal__list-image"
-        src="./assets/images/products/${image}"
+        src="${imagePath(image)}"
         alt="${title}"
         width="360"
         height="360"
@@ -14,7 +14,7 @@ export const basketModalTemplate = (id, title, price, image) =>
       <span class="basket-modal__list-title">${title}</span>
       <span class="basket-modal__list-price">$${price}</span>
       <button
-        class="basket-remove"
+        class="basket-remove close"
         type="button"
         aria-label="remove item from basket"
         ${ATTRIBUTES.PRODUCT_ID}="${id}"

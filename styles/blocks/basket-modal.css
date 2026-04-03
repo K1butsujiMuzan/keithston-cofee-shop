@@ -59,6 +59,8 @@
   align-items: center;
 }
 
-.basket-modal__controls{
+.basket-modal__controls {
   display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }

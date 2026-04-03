@@ -87,6 +87,9 @@ export class Basket {
     this.basketList.addEventListener('click', this.onItemRemove)
     this.basketOrder.addEventListener('click', this.onBasketOrder)
     this.basketClear.addEventListener('click', () => {
+      if(this.basket.length === 0) {
+        return alert('The cart is already empty')
+      }
       if(confirm('Are you sure?')) {
         this.onBasketClear()
       }

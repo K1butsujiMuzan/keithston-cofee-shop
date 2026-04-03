@@ -27,6 +27,10 @@
   align-items: center;
 }
 
+.basket-remove {
+  margin-left: auto;
+}
+
 .basket__list-image {
   width: 4rem;
   height: 4rem;

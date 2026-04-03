@@ -1,20 +1,30 @@
-import {ATTRIBUTES, BUTTON_TYPES} from "./constants.js";
+import {ATTRIBUTES, BUTTON_TYPES, imagePath} from "./constants.js";
 
 export const cardTemplate = (id, title, price, image, quantity) => `
     <article class="top-products__card card" data-js-product-${id}>
-        <div class="top-products__card-container">
+        <button 
+          class="top-products__card-container"
+          ${ATTRIBUTES.BUTTON_TYPE}="${BUTTON_TYPES.OPEN_MODAL}"
+          ${ATTRIBUTES.PRODUCT_ID}="${id}"
+        >
           <img
             class="top-products__card-image card-image"
-            src="./assets/images/products/${image}"
+            src="${imagePath(image)}"
             alt="${title}"
             width="360"
             height="360"
             loading="lazy"
           />
-        </div>
+        </button>
         <div class="top-products__card-controls">
           <div class="top-products__card-information">
-            <h3 class="top-products__card-title">${title}</h3>
+            <button 
+              class="top-products__card-title"
+              ${ATTRIBUTES.BUTTON_TYPE}="${BUTTON_TYPES.OPEN_MODAL}"
+              ${ATTRIBUTES.PRODUCT_ID}="${id}"
+            >
+              ${title}
+            </button>
             <span class="top-products__card-price">$${price}</span>
           </div>
           ${quantity === 0 ?
@@ -26,7 +36,7 @@ export const cardTemplate = (id, title, price, image, quantity) => `
             >
               Add
             </button>` :
-    `<div class="top-products__card-buttons main-buttons">
+    `<div class="top-products__card-buttons">
               <button
                 class="top-products__card-button main-button"
                 type="button"

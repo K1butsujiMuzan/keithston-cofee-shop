@@ -1,10 +1,10 @@
-import {ATTRIBUTES, BUTTON_TYPES} from "./constants.js";
+import {ATTRIBUTES, BUTTON_TYPES, imagePath} from "./constants.js";
 
 export const basketTemplate = (id, title, price, image) => `
   <li class="basket__list-item">
     <img
       class="basket__list-image"
-      src="./assets/images/products/${image}"
+      src="${imagePath(image)}"
       alt="${title}"
       width="360"
       height="360"
@@ -13,7 +13,7 @@ export const basketTemplate = (id, title, price, image) => `
     <h2 class="basket__list-title">${title}</h2>
     <span class="basket__list-price">$${price}</span>
     <button
-      class="basket-remove"
+      class="basket-remove close"
       type="button"
       aria-label="remove item from basket"
       ${ATTRIBUTES.PRODUCT_ID}="${id}"

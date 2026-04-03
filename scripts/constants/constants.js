@@ -4,9 +4,13 @@ export const LOCAL_STORAGE_KEYS = {
   TOTAL_QUANTITY: 'total-quantity'
 }
 
+export const imagePath = (image) => `./assets/images/products/${image}`
+
 export const BUTTON_TYPES = {
   ADD: 'add',
-  REMOVE: 'remove'
+  REMOVE: 'remove',
+  OPEN_MODAL: 'open-modal',
+  CLOSE_MODAL: 'close-modal'
 }
 
 export const ATTRIBUTES = {

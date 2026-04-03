@@ -1,4 +1,5 @@
 .information-section{
+  padding-inline: 1rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,26 +15,36 @@
   padding-block: clamp(2rem, 1.194rem + 3.4389vw, 4.375rem);
 }
 
+.about-us {
+  background-image: url("../../assets/images/about-us.png");
+  padding-block: clamp(2rem, 0.9819rem + 4.34389vw, 5rem);
+}
+
 .information-section__title {
-  max-width: 21.5rem;
-  color: var(--color-brown);
   font-size: clamp(1.5rem, 0.99rem + 2.17vw, 3rem);
   font-family: var(--font-sansita-swashed), sans-serif;
+}
+
+.first-order__title {
+  max-width: 21.5rem;
+  color: var(--color-brown);
   font-weight: 500;
+}
+
+.about-us__title {
+  color: var(--color-light);
+  font-weight: 600;
 }
 
 .information-section__text {
   max-width: 21.5rem;
   font-size: clamp(1rem, 0.83rem + 0.7239vw, 1.5rem);
+}
+
+.first-order__text {
   color: var(--color-gray);
 }
 
-.basket-modal__information {
-
-}
-
-.basket-modal__controls {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.about-us__text {
+  color: var(--color-gray-light);
 }

@@ -18,302 +18,392 @@
   <meta name="description" content="Keithston Online Coffee Shop">
 </head>
 <body class="body">
-  <header class="header">
-    <div class="header__inner container">
-      <a
-        class="header__logo logo"
-        href="./index.html"
-        aria-label="Keithston logo"
+  <div class="root">
+    <header class="header">
+      <div class="header__inner container">
+        <a
+          class="header__logo logo"
+          href="./index.html"
+          aria-label="Keithston logo"
+        >
+          <svg
+            aria-hidden="true"
+            role="img"
+            class="logo__image"
+            width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_3046_176)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7552 6.89619C31.354 7.0904 31.7605 7.6464 31.7634 8.27593C31.7754 8.55218 31.7763 8.77701 31.7763 8.77701C31.7763 8.77701 31.7667 16.4436 22.6891 23.5011C18.9964 26.3721 15.7936 31.0389 14.9571 35.4022C14.8471 35.9857 14.3955 36.4455 13.8137 36.5651C13.232 36.6848 12.6357 36.441 12.3041 35.9473C9.71711 32.1137 6.78332 24.9492 11.6755 16.4651C16.0869 8.81544 24.2318 4.90353 30.7552 6.89619ZM28.8232 9.30641C23.2106 8.61032 17.706 12.0201 14.2736 17.9651C11.5473 22.6871 12.0733 28.0492 13.4101 31.5958C14.5139 28.31 16.6651 24.3844 20.8481 21.1322C26.178 16.9885 28.2505 11.5929 28.8232 9.30641Z" fill="black"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9693 40.664C17.3436 40.4638 16.9174 39.8835 16.9148 39.2264C16.9023 38.9706 16.9009 38.7689 16.9009 38.7689C16.9009 38.7689 16.9105 31.1023 25.9882 24.0449C29.6478 21.1998 32.8259 16.5906 33.697 12.2619C33.8175 11.6586 34.29 11.1867 34.8942 11.0687C35.4988 10.9501 36.1147 11.2078 36.4538 11.7214C39.0216 15.5838 41.8422 22.6864 37.0018 31.0808C32.6006 38.7113 24.4853 42.6229 17.9693 40.664ZM19.854 38.2395C25.4667 38.9356 30.9713 35.5259 34.4037 29.5808C37.1299 24.8588 36.604 19.4967 35.2672 15.9502C34.1634 19.236 32.0122 23.1616 27.8291 26.4138C22.4992 30.5575 20.4267 35.9531 19.854 38.2395Z" fill="black"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_3046_176">
+                <rect width="48" height="48" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <nav class="header__menu">
+          <ul class="header__menu-list" data-js-header-menu-list>
+            <li class="header__menu-item">
+              <a
+                class="header__menu-link header__menu-link--active"
+                href="#"
+              >
+                Home
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a
+                class="header__menu-link"
+                href="#"
+              >
+                Blog
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a
+                class="header__menu-link"
+                href="#"
+              >
+                Contact Us
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a
+                class="header__menu-link"
+                href="#"
+              >
+                Services
+              </a>
+            </li>
+          </ul>
+          <div class="header__menu-basket-wrapper">
+            <a
+              class="header__menu-basket"
+              href="./basket.html"
+              aria-label="basket"
+            >
+              <svg
+                aria-hidden="true"
+                role="img"
+                width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.9998 12H26.0465L21.1132 4.59332C20.9169 4.29911 20.6118 4.09491 20.265 4.02565C19.9182 3.95638 19.558 4.02773 19.2638 4.22399C18.9696 4.42025 18.7654 4.72535 18.6962 5.07216C18.6269 5.41898 18.6982 5.77911 18.8945 6.07332L22.8425 12H9.15717L13.1092 6.07332C13.3054 5.77911 13.3768 5.41898 13.3075 5.07216C13.2382 4.72535 13.0341 4.42025 12.7398 4.22399C12.4456 4.02773 12.0855 3.95638 11.7387 4.02565C11.3919 4.09491 11.0868 4.29911 10.8905 4.59332L5.95317 12H3.99984C3.64622 12 3.30708 12.1405 3.05703 12.3905C2.80698 12.6406 2.6665 12.9797 2.6665 13.3333C2.6665 13.6869 2.80698 14.0261 3.05703 14.2761C3.30708 14.5262 3.64622 14.6667 3.99984 14.6667H5.33317V25.3333C5.33317 26.0406 5.61412 26.7188 6.11422 27.2189C6.61432 27.719 7.29259 28 7.99984 28H23.9998C24.7071 28 25.3854 27.719 25.8855 27.2189C26.3856 26.7188 26.6665 26.0406 26.6665 25.3333V14.6667H27.9998C28.3535 14.6667 28.6926 14.5262 28.9426 14.2761C29.1927 14.0261 29.3332 13.6869 29.3332 13.3333C29.3332 12.9797 29.1927 12.6406 28.9426 12.3905C28.6926 12.1405 28.3535 12 27.9998 12ZM11.9998 23.3333C11.9998 23.6869 11.8594 24.0261 11.6093 24.2761C11.3593 24.5262 11.0201 24.6667 10.6665 24.6667C10.3129 24.6667 9.97374 24.5262 9.72369 24.2761C9.47365 24.0261 9.33317 23.6869 9.33317 23.3333V18C9.33317 17.6464 9.47365 17.3072 9.72369 17.0572C9.97374 16.8071 10.3129 16.6667 10.6665 16.6667C11.0201 16.6667 11.3593 16.8071 11.6093 17.0572C11.8594 17.3072 11.9998 17.6464 11.9998 18V23.3333ZM17.3332 23.3333C17.3332 23.6869 17.1927 24.0261 16.9426 24.2761C16.6926 24.5262 16.3535 24.6667 15.9998 24.6667C15.6462 24.6667 15.3071 24.5262 15.057 24.2761C14.807 24.0261 14.6665 23.6869 14.6665 23.3333V18C14.6665 17.6464 14.807 17.3072 15.057 17.0572C15.3071 16.8071 15.6462 16.6667 15.9998 16.6667C16.3535 16.6667 16.6926 16.8071 16.9426 17.0572C17.1927 17.3072 17.3332 17.6464 17.3332 18V23.3333ZM22.6665 23.3333C22.6665 23.6869 22.526 24.0261 22.276 24.2761C22.0259 24.5262 21.6868 24.6667 21.3332 24.6667C20.9795 24.6667 20.6404 24.5262 20.3904 24.2761C20.1403 24.0261 19.9998 23.6869 19.9998 23.3333V18C19.9998 17.6464 20.1403 17.3072 20.3904 17.0572C20.6404 16.8071 20.9795 16.6667 21.3332 16.6667C21.6868 16.6667 22.0259 16.8071 22.276 17.0572C22.526 17.3072 22.6665 17.6464 22.6665 18V23.3333Z" fill="black"/>
+              </svg>
+              <span class="header__menu-basket-quantity" data-js-basket-modal-total-quantity>0</span>
+            </a>
+            <div class="basket-modal">
+              <ul class="basket-modal__list" data-js-basket-modal-list>
+                <li class="basket-modal__list-item">
+                  <svg
+                    class="basket-modal__list-image"
+                    aria-hidden="true"
+                    role="img"
+                    fill="hsl(228, 97%, 42%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path>
+                  </svg>
+                  <span class="basket-modal__list-title">Loading...</span>
+                  <button
+                    class="basket-remove close"
+                    type="button"
+                    aria-label="remove item from basket"
+                    disabled
+                  >
+                    <svg
+                      aria-hidden="true"
+                      role="img"
+                      width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4186 11.9999L4.5 18.3131L6.08138 20L12 13.6868L17.9186 20L19.5 18.3131L13.5814 11.9999L19.4999 5.68682L17.9184 4L12 10.313L6.08155 4L4.50018 5.68682L10.4186 11.9999Z" fill="#080341"/>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <div class="basket-modal__information">
+                <span class="basket-modal__total-price">Total price: <span data-js-basket-modal-price>0</span></span>
+                <div class="basket-modal__controls">
+                  <button
+                    data-js-basket-modal-clear
+                    class="basket-remove close"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      role="img"
+                      width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M3.75 6.00004H2.25C2.05109 6.00004 1.86032 5.92102 1.71967 5.78036C1.57902 5.63971 1.5 5.44895 1.5 5.25004C1.5 5.05112 1.57902 4.86036 1.71967 4.71971C1.86032 4.57905 2.05109 4.50004 2.25 4.50004H8.25V2.24854C8.25 2.04962 8.32902 1.85886 8.46967 1.71821C8.61032 1.57755 8.80109 1.49854 9 1.49854H15C15.1989 1.49854 15.3897 1.57755 15.5303 1.71821C15.671 1.85886 15.75 2.04962 15.75 2.24854V4.50004H21.75C21.9489 4.50004 22.1397 4.57905 22.2803 4.71971C22.421 4.86036 22.5 5.05112 22.5 5.25004C22.5 5.44895 22.421 5.63971 22.2803 5.78036C22.1397 5.92102 21.9489 6.00004 21.75 6.00004H20.25V21.75C20.25 21.9489 20.171 22.1397 20.0303 22.2804C19.8897 22.421 19.6989 22.5 19.5 22.5H4.5C4.30109 22.5 4.11032 22.421 3.96967 22.2804C3.82902 22.1397 3.75 21.9489 3.75 21.75V6.00004ZM14.25 4.50004V3.00004H9.75V4.50004H14.25ZM5.25 21H18.75V6.00004H5.25V21ZM9.75 18C9.55109 18 9.36032 17.921 9.21967 17.7804C9.07902 17.6397 9 17.4489 9 17.25V9.75004C9 9.55112 9.07902 9.36036 9.21967 9.21971C9.36032 9.07905 9.55109 9.00004 9.75 9.00004C9.94891 9.00004 10.1397 9.07905 10.2803 9.21971C10.421 9.36036 10.5 9.55112 10.5 9.75004V17.25C10.5 17.4489 10.421 17.6397 10.2803 17.7804C10.1397 17.921 9.94891 18 9.75 18ZM14.25 18C14.0511 18 13.8603 17.921 13.7197 17.7804C13.579 17.6397 13.5 17.4489 13.5 17.25V9.75004C13.5 9.55112 13.579 9.36036 13.7197 9.21971C13.8603 9.07905 14.0511 9.00004 14.25 9.00004C14.4489 9.00004 14.6397 9.07905 14.7803 9.21971C14.921 9.36036 15 9.55112 15 9.75004V17.25C15 17.4489 14.921 17.6397 14.7803 17.7804C14.6397 17.921 14.4489 18 14.25 18Z" fill="black"/>
+                    </svg>
+                  </button>
+                  <button
+                    data-js-basket-modal-order
+                    class="basket-modal__order main-button"
+                    type="button"
+                  >
+                    Order
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="header__burger-button"
+            type="button"
+            data-js-burger-button
+          >
+            <span class="header__burger-line"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero big-container">
+        <div class="hero__inner container">
+          <div class="hero__text">
+            <span class="accent-text">Delicious Cafe</span>
+            <h1 class="page-title">
+              Sweet Treats, Perfect Eats
+            </h1>
+          </div>
+          <ul class="hero__list">
+            <li class="hero__list-item">
+              <a
+                class="hero__list-link link"
+                href="#"
+              >
+                Shop Now
+              </a>
+            </li>
+            <li class="hero__list-item">
+              <a
+                class="hero__list-link link link--transparent"
+                href="#"
+              >
+                Learn More
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <h2 class="section-title">Top Products</h2>
+      <section class="top-products container" data-js-top-products>
+        <article class="card-loading">
+          <div class="top-products__card-container">
+            <svg
+              class="top-products__card-image card-image"
+              aria-hidden="true"
+              role="img"
+              fill="hsl(228, 97%, 42%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path>
+            </svg>
+          </div>
+          <div class="top-products__card-controls">
+            <div class="top-products__card-information">
+              <h3 class="top-products__card-title">Loading...</h3>
+              <span class="top-products__card-price">Loading...</span>
+            </div>
+            <button
+              disabled
+              class="top-products__card-button main-button"
+              type="button"
+            >
+              Loading...
+            </button>
+          </div>
+        </article>
+        <article class="card-loading">
+          <div class="top-products__card-container">
+            <svg
+              class="top-products__card-image card-image"
+              aria-hidden="true"
+              role="img"
+              fill="hsl(228, 97%, 42%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path>
+            </svg>
+          </div>
+          <div class="top-products__card-controls">
+            <div class="top-products__card-information">
+              <h3 class="top-products__card-title">Loading...</h3>
+              <span class="top-products__card-price">Loading...</span>
+            </div>
+            <button
+              disabled
+              class="top-products__card-button main-button"
+              type="button"
+            >
+              Loading...
+            </button>
+          </div>
+        </article>
+        <article class="card-loading">
+          <div class="top-products__card-container">
+            <svg
+              class="top-products__card-image card-image"
+              aria-hidden="true"
+              role="img"
+              fill="hsl(228, 97%, 42%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path>
+            </svg>
+          </div>
+          <div class="top-products__card-controls">
+            <div class="top-products__card-information">
+              <h3 class="top-products__card-title">Loading...</h3>
+              <span class="top-products__card-price">Loading...</span>
+            </div>
+            <button
+              disabled
+              class="top-products__card-button main-button"
+              type="button"
+            >
+              Loading...
+            </button>
+          </div>
+        </article>
+        <article class="card-loading">
+          <div class="top-products__card-container">
+            <svg
+              class="top-products__card-image card-image"
+              aria-hidden="true"
+              role="img"
+              fill="hsl(228, 97%, 42%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path>
+            </svg>
+          </div>
+          <div class="top-products__card-controls">
+            <div class="top-products__card-information">
+              <h3 class="top-products__card-title">Loading...</h3>
+              <span class="top-products__card-price">Loading...</span>
+            </div>
+            <button
+              disabled
+              class="top-products__card-button main-button"
+              type="button"
+            >
+              Loading...
+            </button>
+          </div>
+        </article>
+        <article class="card-loading">
+          <div class="top-products__card-container">
+            <svg
+              class="top-products__card-image card-image"
+              aria-hidden="true"
+              role="img"
+              fill="hsl(228, 97%, 42%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path>
+            </svg>
+          </div>
+          <div class="top-products__card-controls">
+            <div class="top-products__card-information">
+              <h3 class="top-products__card-title">Loading...</h3>
+              <span class="top-products__card-price">Loading...</span>
+            </div>
+            <button
+              disabled
+              class="top-products__card-button main-button"
+              type="button"
+            >
+              Loading...
+            </button>
+          </div>
+        </article>
+        <article class="card-loading">
+          <div class="top-products__card-container">
+            <svg
+              class="top-products__card-image card-image"
+              aria-hidden="true"
+              role="img"
+              fill="hsl(228, 97%, 42%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path>
+            </svg>
+          </div>
+          <div class="top-products__card-controls">
+            <div class="top-products__card-information">
+              <h3 class="top-products__card-title">Loading...</h3>
+              <span class="top-products__card-price">Loading...</span>
+            </div>
+            <button
+              disabled
+              class="top-products__card-button main-button"
+              type="button"
+            >
+              Loading...
+            </button>
+          </div>
+        </article>
+      </section>
+      <section class="first-order information-section big-container">
+        <h2 class="first-order__title information-section__title">20% Off Your First Order</h2>
+        <p class="first-order__text information-section__text">
+          Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibenjgg.
+        </p>
+        <a
+          class="information-section__link link"
+          href="#"
+        >
+          Learn More
+        </a>
+      </section>
+      <h2 class="section-title">Explore More</h2>
+      <section class="about-us information-section big-container">
+        <h2 class="information-section__title about-us__title">About us</h2>
+        <p class="information-section__text about-us__text">
+          Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis.
+        </p>
+        <a
+          class="information-section__link link"
+          href="#"
+        >
+          Read More
+        </a>
+      </section>
+    </main>
+  </div>
+  <div
+    class="product-modal"
+    data-js-product-modal-wrapper
+  >
+    <div
+      aria-labelledby="product-modal-title"
+      aria-modal="true"
+      role="dialog"
+      class="product-modal__inner"
+    >
+      <img
+        data-js-product-modal-image
+        class="product-modal__image"
+        src=""
+        alt=""
+        width="360"
+        height="360"
+        loading="lazy"
+      />
+      <div class="product-modal__information">
+        <div class="product-modal__text">
+          <h3 id="product-modal-title" class="product-modal__title" data-js-product-modal-title></h3>
+          <p class="product-modal__description" data-js-product-modal-description></p>
+        </div>
+        <div class="product-modal__controls">
+          <span class="product-modal__price" data-js-product-modal-price></span>
+          <div class="product-modal__buttons" data-js-product-modal-buttons-container>
+            <button
+              class="product-modal__button main-button"
+              type="button"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="product-modal__close close"
+        type="button"
+        data-js-product-modal-close
+        button-type="close-modal"
       >
         <svg
           aria-hidden="true"
           role="img"
-          class="logo__image"
-          width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+          width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_3046_176)">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7552 6.89619C31.354 7.0904 31.7605 7.6464 31.7634 8.27593C31.7754 8.55218 31.7763 8.77701 31.7763 8.77701C31.7763 8.77701 31.7667 16.4436 22.6891 23.5011C18.9964 26.3721 15.7936 31.0389 14.9571 35.4022C14.8471 35.9857 14.3955 36.4455 13.8137 36.5651C13.232 36.6848 12.6357 36.441 12.3041 35.9473C9.71711 32.1137 6.78332 24.9492 11.6755 16.4651C16.0869 8.81544 24.2318 4.90353 30.7552 6.89619ZM28.8232 9.30641C23.2106 8.61032 17.706 12.0201 14.2736 17.9651C11.5473 22.6871 12.0733 28.0492 13.4101 31.5958C14.5139 28.31 16.6651 24.3844 20.8481 21.1322C26.178 16.9885 28.2505 11.5929 28.8232 9.30641Z" fill="black"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9693 40.664C17.3436 40.4638 16.9174 39.8835 16.9148 39.2264C16.9023 38.9706 16.9009 38.7689 16.9009 38.7689C16.9009 38.7689 16.9105 31.1023 25.9882 24.0449C29.6478 21.1998 32.8259 16.5906 33.697 12.2619C33.8175 11.6586 34.29 11.1867 34.8942 11.0687C35.4988 10.9501 36.1147 11.2078 36.4538 11.7214C39.0216 15.5838 41.8422 22.6864 37.0018 31.0808C32.6006 38.7113 24.4853 42.6229 17.9693 40.664ZM19.854 38.2395C25.4667 38.9356 30.9713 35.5259 34.4037 29.5808C37.1299 24.8588 36.604 19.4967 35.2672 15.9502C34.1634 19.236 32.0122 23.1616 27.8291 26.4138C22.4992 30.5575 20.4267 35.9531 19.854 38.2395Z" fill="black"/>
-          </g>
-          <defs>
-            <clipPath id="clip0_3046_176">
-              <rect width="48" height="48" fill="white"/>
-            </clipPath>
-          </defs>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4186 11.9999L4.5 18.3131L6.08138 20L12 13.6868L17.9186 20L19.5 18.3131L13.5814 11.9999L19.4999 5.68682L17.9184 4L12 10.313L6.08155 4L4.50018 5.68682L10.4186 11.9999Z" fill="#080341"/>
         </svg>
-      </a>
-      <nav class="header__menu">
-        <ul class="header__menu-list" data-js-header-menu-list>
-          <li class="header__menu-item">
-            <a
-              class="header__menu-link header__menu-link--active"
-              href="#"
-            >
-              Home
-            </a>
-          </li>
-          <li class="header__menu-item">
-            <a
-              class="header__menu-link"
-              href="#"
-            >
-              Blog
-            </a>
-          </li>
-          <li class="header__menu-item">
-            <a
-              class="header__menu-link"
-              href="#"
-            >
-              Contact Us
-            </a>
-          </li>
-          <li class="header__menu-item">
-            <a
-              class="header__menu-link"
-              href="#"
-            >
-              Services
-            </a>
-          </li>
-        </ul>
-        <div class="header__menu-basket-wrapper">
-          <a
-            class="header__menu-basket"
-            href="./basket.html"
-            aria-label="basket"
-          >
-            <svg
-              aria-hidden="true"
-              role="img"
-              width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M27.9998 12H26.0465L21.1132 4.59332C20.9169 4.29911 20.6118 4.09491 20.265 4.02565C19.9182 3.95638 19.558 4.02773 19.2638 4.22399C18.9696 4.42025 18.7654 4.72535 18.6962 5.07216C18.6269 5.41898 18.6982 5.77911 18.8945 6.07332L22.8425 12H9.15717L13.1092 6.07332C13.3054 5.77911 13.3768 5.41898 13.3075 5.07216C13.2382 4.72535 13.0341 4.42025 12.7398 4.22399C12.4456 4.02773 12.0855 3.95638 11.7387 4.02565C11.3919 4.09491 11.0868 4.29911 10.8905 4.59332L5.95317 12H3.99984C3.64622 12 3.30708 12.1405 3.05703 12.3905C2.80698 12.6406 2.6665 12.9797 2.6665 13.3333C2.6665 13.6869 2.80698 14.0261 3.05703 14.2761C3.30708 14.5262 3.64622 14.6667 3.99984 14.6667H5.33317V25.3333C5.33317 26.0406 5.61412 26.7188 6.11422 27.2189C6.61432 27.719 7.29259 28 7.99984 28H23.9998C24.7071 28 25.3854 27.719 25.8855 27.2189C26.3856 26.7188 26.6665 26.0406 26.6665 25.3333V14.6667H27.9998C28.3535 14.6667 28.6926 14.5262 28.9426 14.2761C29.1927 14.0261 29.3332 13.6869 29.3332 13.3333C29.3332 12.9797 29.1927 12.6406 28.9426 12.3905C28.6926 12.1405 28.3535 12 27.9998 12ZM11.9998 23.3333C11.9998 23.6869 11.8594 24.0261 11.6093 24.2761C11.3593 24.5262 11.0201 24.6667 10.6665 24.6667C10.3129 24.6667 9.97374 24.5262 9.72369 24.2761C9.47365 24.0261 9.33317 23.6869 9.33317 23.3333V18C9.33317 17.6464 9.47365 17.3072 9.72369 17.0572C9.97374 16.8071 10.3129 16.6667 10.6665 16.6667C11.0201 16.6667 11.3593 16.8071 11.6093 17.0572C11.8594 17.3072 11.9998 17.6464 11.9998 18V23.3333ZM17.3332 23.3333C17.3332 23.6869 17.1927 24.0261 16.9426 24.2761C16.6926 24.5262 16.3535 24.6667 15.9998 24.6667C15.6462 24.6667 15.3071 24.5262 15.057 24.2761C14.807 24.0261 14.6665 23.6869 14.6665 23.3333V18C14.6665 17.6464 14.807 17.3072 15.057 17.0572C15.3071 16.8071 15.6462 16.6667 15.9998 16.6667C16.3535 16.6667 16.6926 16.8071 16.9426 17.0572C17.1927 17.3072 17.3332 17.6464 17.3332 18V23.3333ZM22.6665 23.3333C22.6665 23.6869 22.526 24.0261 22.276 24.2761C22.0259 24.5262 21.6868 24.6667 21.3332 24.6667C20.9795 24.6667 20.6404 24.5262 20.3904 24.2761C20.1403 24.0261 19.9998 23.6869 19.9998 23.3333V18C19.9998 17.6464 20.1403 17.3072 20.3904 17.0572C20.6404 16.8071 20.9795 16.6667 21.3332 16.6667C21.6868 16.6667 22.0259 16.8071 22.276 17.0572C22.526 17.3072 22.6665 17.6464 22.6665 18V23.3333Z" fill="black"/>
-            </svg>
-            <span class="header__menu-basket-quantity" data-js-basket-modal-total-quantity></span>
-          </a>
-          <div class="basket-modal">
-            <ul class="basket-modal__list" data-js-basket-modal-list></ul>
-            <div class="basket-modal__information">
-              <span class="basket-modal__total-price">Total price: <span data-js-basket-modal-price></span></span>
-              <div class="basket-modal__controls">
-                <button
-                  data-js-basket-modal-clear
-                  class="basket-remove"
-                  type="button"
-                >
-                  <svg
-                    aria-hidden="true"
-                    role="img"
-                    width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M3.75 6.00004H2.25C2.05109 6.00004 1.86032 5.92102 1.71967 5.78036C1.57902 5.63971 1.5 5.44895 1.5 5.25004C1.5 5.05112 1.57902 4.86036 1.71967 4.71971C1.86032 4.57905 2.05109 4.50004 2.25 4.50004H8.25V2.24854C8.25 2.04962 8.32902 1.85886 8.46967 1.71821C8.61032 1.57755 8.80109 1.49854 9 1.49854H15C15.1989 1.49854 15.3897 1.57755 15.5303 1.71821C15.671 1.85886 15.75 2.04962 15.75 2.24854V4.50004H21.75C21.9489 4.50004 22.1397 4.57905 22.2803 4.71971C22.421 4.86036 22.5 5.05112 22.5 5.25004C22.5 5.44895 22.421 5.63971 22.2803 5.78036C22.1397 5.92102 21.9489 6.00004 21.75 6.00004H20.25V21.75C20.25 21.9489 20.171 22.1397 20.0303 22.2804C19.8897 22.421 19.6989 22.5 19.5 22.5H4.5C4.30109 22.5 4.11032 22.421 3.96967 22.2804C3.82902 22.1397 3.75 21.9489 3.75 21.75V6.00004ZM14.25 4.50004V3.00004H9.75V4.50004H14.25ZM5.25 21H18.75V6.00004H5.25V21ZM9.75 18C9.55109 18 9.36032 17.921 9.21967 17.7804C9.07902 17.6397 9 17.4489 9 17.25V9.75004C9 9.55112 9.07902 9.36036 9.21967 9.21971C9.36032 9.07905 9.55109 9.00004 9.75 9.00004C9.94891 9.00004 10.1397 9.07905 10.2803 9.21971C10.421 9.36036 10.5 9.55112 10.5 9.75004V17.25C10.5 17.4489 10.421 17.6397 10.2803 17.7804C10.1397 17.921 9.94891 18 9.75 18ZM14.25 18C14.0511 18 13.8603 17.921 13.7197 17.7804C13.579 17.6397 13.5 17.4489 13.5 17.25V9.75004C13.5 9.55112 13.579 9.36036 13.7197 9.21971C13.8603 9.07905 14.0511 9.00004 14.25 9.00004C14.4489 9.00004 14.6397 9.07905 14.7803 9.21971C14.921 9.36036 15 9.55112 15 9.75004V17.25C15 17.4489 14.921 17.6397 14.7803 17.7804C14.6397 17.921 14.4489 18 14.25 18Z" fill="black"/>
-                  </svg>
-                </button>
-                <button
-                  data-js-basket-modal-order
-                  class="basket-modal__order main-button"
-                  type="button"
-                >
-                  Order
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="header__burger-button"
-          type="button"
-          data-js-burger-button
-        >
-          <span class="header__burger-line"></span>
-        </button>
-      </nav>
+      </button>
     </div>
-  </header>
-  <main class="main">
-    <section class="hero big-container">
-      <div class="hero__inner container">
-        <div class="hero__text">
-          <span class="accent-text">Delicious Cafe</span>
-          <h1 class="page-title">
-            Sweet Treats, Perfect Eats
-          </h1>
-        </div>
-        <ul class="hero__list">
-          <li class="hero__list-item">
-            <a
-              class="hero__list-link link"
-              href="#"
-            >
-              Shop Now
-            </a>
-          </li>
-          <li class="hero__list-item">
-            <a
-              class="hero__list-link link link--transparent"
-              href="#"
-            >
-              Learn More
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <h2 class="section-title">Top Products</h2>
-    <section class="top-products container" data-js-top-products>
-      <article class="card-loading">
-        <div class="top-products__card-container">
-          <svg
-            class="top-products__card-image card-image"
-            aria-hidden="true"
-            role="img"
-            fill="hsl(228, 97%, 42%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path>
-          </svg>
-        </div>
-        <div class="top-products__card-controls">
-          <div class="top-products__card-information">
-            <h3 class="top-products__card-title">Loading...</h3>
-            <span class="top-products__card-price">Loading...</span>
-          </div>
-          <button
-            disabled
-            class="top-products__card-button main-button"
-            type="button"
-          >
-            Loading...
-          </button>
-        </div>
-      </article>
-      <article class="card-loading">
-        <div class="top-products__card-container">
-          <svg
-            class="top-products__card-image card-image"
-            aria-hidden="true"
-            role="img"
-            fill="hsl(228, 97%, 42%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path>
-          </svg>
-        </div>
-        <div class="top-products__card-controls">
-          <div class="top-products__card-information">
-            <h3 class="top-products__card-title">Loading...</h3>
-            <span class="top-products__card-price">Loading...</span>
-          </div>
-          <button
-            disabled
-            class="top-products__card-button main-button"
-            type="button"
-          >
-            Loading...
-          </button>
-        </div>
-      </article>
-      <article class="card-loading">
-        <div class="top-products__card-container">
-          <svg
-            class="top-products__card-image card-image"
-            aria-hidden="true"
-            role="img"
-            fill="hsl(228, 97%, 42%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path>
-          </svg>
-        </div>
-        <div class="top-products__card-controls">
-          <div class="top-products__card-information">
-            <h3 class="top-products__card-title">Loading...</h3>
-            <span class="top-products__card-price">Loading...</span>
-          </div>
-          <button
-            disabled
-            class="top-products__card-button main-button"
-            type="button"
-          >
-            Loading...
-          </button>
-        </div>
-      </article>
-      <article class="card-loading">
-        <div class="top-products__card-container">
-          <svg
-            class="top-products__card-image card-image"
-            aria-hidden="true"
-            role="img"
-            fill="hsl(228, 97%, 42%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path>
-          </svg>
-        </div>
-        <div class="top-products__card-controls">
-          <div class="top-products__card-information">
-            <h3 class="top-products__card-title">Loading...</h3>
-            <span class="top-products__card-price">Loading...</span>
-          </div>
-          <button
-            disabled
-            class="top-products__card-button main-button"
-            type="button"
-          >
-            Loading...
-          </button>
-        </div>
-      </article>
-      <article class="card-loading">
-        <div class="top-products__card-container">
-          <svg
-            class="top-products__card-image card-image"
-            aria-hidden="true"
-            role="img"
-            fill="hsl(228, 97%, 42%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path>
-          </svg>
-        </div>
-        <div class="top-products__card-controls">
-          <div class="top-products__card-information">
-            <h3 class="top-products__card-title">Loading...</h3>
-            <span class="top-products__card-price">Loading...</span>
-          </div>
-          <button
-            disabled
-            class="top-products__card-button main-button"
-            type="button"
-          >
-            Loading...
-          </button>
-        </div>
-      </article>
-      <article class="card-loading">
-        <div class="top-products__card-container">
-          <svg
-            class="top-products__card-image card-image"
-            aria-hidden="true"
-            role="img"
-            fill="hsl(228, 97%, 42%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path>
-          </svg>
-        </div>
-        <div class="top-products__card-controls">
-          <div class="top-products__card-information">
-            <h3 class="top-products__card-title">Loading...</h3>
-            <span class="top-products__card-price">Loading...</span>
-          </div>
-          <button
-            disabled
-            class="top-products__card-button main-button"
-            type="button"
-          >
-            Loading...
-          </button>
-        </div>
-      </article>
-    </section>
-    <section class="first-order information-section big-container">
-      <h2 class="information-section__title">20% Off Your First Order</h2>
-      <p class="information-section__text">
-        Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibenjgg.
-      </p>
-      <a
-        class="information-section__link link"
-        href="#"
-      >
-        Learn More
-      </a>
-    </section>
-    <h2 class="section-title">Explore More</h2>
-  </main>
+  </div>
   <script src="./scripts/index.js" type="module"></script>
 </body>
 </html>

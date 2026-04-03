@@ -74,16 +74,40 @@
   <main class="basket-main">
     <section class="basket container">
       <h1 class="page-title">Cart</h1>
-      <ul class="basket__list" data-js-basket-list></ul>
+      <ul class="basket__list" data-js-basket-list>
+        <li class="basket__list-item">
+          <svg
+            class="basket__list-image"
+            aria-hidden="true"
+            role="img"
+            fill="hsl(228, 97%, 42%)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path>
+          </svg>
+          <h2 class="basket__list-title">Loading...</h2>
+          <button
+            class="basket-remove close"
+            type="button"
+            aria-label="remove item from basket"
+            disabled
+          >
+            <svg
+              aria-hidden="true"
+              role="img"
+              width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            >
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4186 11.9999L4.5 18.3131L6.08138 20L12 13.6868L17.9186 20L19.5 18.3131L13.5814 11.9999L19.4999 5.68682L17.9184 4L12 10.313L6.08155 4L4.50018 5.68682L10.4186 11.9999Z" fill="#080341"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
       <div class="basket__footer">
         <div class="basket__information">
-          <span class="basket__total-price">Total price: <span data-js-basket-price></span></span>
-          <span class="basket__total-quantity">Number of products <span data-js-basket-quantity></span></span>
+          <span class="basket__total-price">Total price: <span data-js-basket-price>0</span></span>
+          <span class="basket__total-quantity">Number of products <span data-js-basket-quantity>0</span></span>
         </div>
         <div class="basket__controls">
           <button
             data-js-basket-clear
-            class="basket-remove"
+            class="basket-remove close"
             type="button"
           >
             <svg
