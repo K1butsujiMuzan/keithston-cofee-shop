@@ -8,6 +8,36 @@ a {
   color: var(--color-light);
   background: var(--color-white);
   overflow-x: hidden;
+  display: flex;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.main {
+  padding-bottom: clamp(2rem, -0.0786rem + 8.868vw, 8.125rem);
+  display: flex;
+  gap: clamp(2rem, -0.0786rem + 8.868vw, 8.125rem);
+  flex-direction: column;
+  align-items: center;
+}
+
+.main,
+.basket-main {
+  flex: 1;
+}
+
+.container {
+  padding-inline: 1rem;
+  max-width: var(--main-container-width);
+}
+
+.big-container {
+  max-width: var(--big-container-width);
+  width: 100%;
 }
 
 .logo {
@@ -24,24 +54,6 @@ a {
   &:active {
     color: var(--color-brown-light);
   }
-}
-
-.main {
-  padding-bottom: clamp(2rem, -0.0786rem + 8.868vw, 8.125rem);
-  display: flex;
-  gap: clamp(2rem, -0.0786rem + 8.868vw, 8.125rem);
-  flex-direction: column;
-  align-items: center;
-}
-
-.container {
-  padding-inline: 1rem;
-  max-width: var(--main-container-width);
-}
-
-.big-container {
-  max-width: var(--big-container-width);
-  width: 100%;
 }
 
 .accent-text {
@@ -178,6 +190,11 @@ a {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
 }
 
 @media (max-width: 35rem) {

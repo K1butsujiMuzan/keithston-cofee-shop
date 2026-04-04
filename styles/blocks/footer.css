@@ -1,0 +1,124 @@
+.footer {
+  background-image: url("../../assets/images/footer-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__inner {
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-inline: auto;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer__information-block {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 0.9151rem + 0.36199vw, 1.25rem);
+}
+
+.footer__about-us {
+  align-items: start;
+}
+
+.footer__explore {
+  align-items: center;
+  text-align: center;
+}
+
+.footer__follow-us {
+  align-items: end;
+}
+
+.footer__block-title {
+  color: var(--color-brown-light);
+  font-size: clamp(1.25rem, 0.9106rem + 1.4479vw, 2.25rem);
+  font-weight: 700;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer__list-item {
+  font-size: clamp(1rem, 0.83rem + 0.7239vw, 1.5rem);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.footer__list-link {
+  font-weight: 600;
+  transition: color var(--main-transition);
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--color-brown);
+    }
+  }
+
+  &:active {
+    color: var(--color-brown);
+  }
+}
+
+.footer__follow-us-header {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__logo {
+  color: var(--color-brown-light);
+}
+
+.footer__follow-us-menu-list {
+  line-height: 1;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__follow-us-menu-link {
+  color: var(--color-brown-light);
+  transition: color var(--main-transition);
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--color-brown);
+    }
+  }
+
+  &:active {
+    color: var(--color-brown);
+  }
+}
+
+.footer__line {
+  background: var(--color-brown-light);
+}
+
+.footer__copyright {
+  color: var(--color-gray);
+  font-weight: 600;
+  font-size: clamp(0.75rem, 0.6651rem + 0.3619vw, 1rem);
+  text-align: center;
+}
+
+@media (max-width: 48rem) {
+  .footer__content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__information-block {
+    align-items: center;
+    text-align: center;
+  }
+}
