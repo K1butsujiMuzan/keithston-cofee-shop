@@ -4,4 +4,6 @@ import {getProducts} from "./services/products.js";
 
 new BurgerMenu()
 const [products, categories] = await getProducts()
-new Products(products, categories)
+if(products.length > 0 && categories.length > 0) {
+  new Products(products, categories)
+}

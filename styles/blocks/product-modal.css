@@ -92,7 +92,7 @@
 
 @media (max-width: 35rem) {
   .product-modal {
-    align-items: end;
+    align-items: flex-end;
   }
 
   .product-modal__inner {

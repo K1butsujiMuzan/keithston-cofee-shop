@@ -14,6 +14,7 @@
   --color-gray: #5D5D5D;
 
   --main-container-width: 82.5rem;
+  --main-container-inline-padding: 1rem;
   --big-container-width: 92.5rem;
   --main-radius: 0.5rem;
   --second-radius: 0.25rem;

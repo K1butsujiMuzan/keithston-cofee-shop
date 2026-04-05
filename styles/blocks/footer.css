@@ -35,7 +35,7 @@
 }
 
 .footer__follow-us {
-  align-items: end;
+  align-items: flex-end;
 }
 
 .footer__block-title {
@@ -52,7 +52,7 @@
 
 .footer__list-item {
   font-size: clamp(1rem, 0.83rem + 0.7239vw, 1.5rem);
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 500;
 }
 

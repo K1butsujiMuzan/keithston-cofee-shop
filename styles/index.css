@@ -4,7 +4,8 @@
 @import "./global.css";
 @import "./blocks/header.css";
 @import "./blocks/hero.css";
-@import "./blocks/top-products.css";
+@import "blocks/products-container.css";
+@import "./blocks/products.css";
 @import "blocks/information-sections.css";
 @import "blocks/basket-modal.css";
 @import "blocks/product-modal.css";

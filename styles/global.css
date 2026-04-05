@@ -17,6 +17,12 @@ a {
   flex: 1;
 }
 
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--color-brown-light);
+  outline-offset: 3px;
+}
+
 .main {
   padding-bottom: clamp(2rem, -0.0786rem + 8.868vw, 8.125rem);
   display: flex;
@@ -31,7 +37,7 @@ a {
 }
 
 .container {
-  padding-inline: 1rem;
+  padding-inline: var(--main-container-inline-padding);
   max-width: var(--main-container-width);
 }
 
@@ -193,6 +199,7 @@ a {
 }
 
 .line {
+  display: block;
   height: 1px;
   width: 100%;
 }

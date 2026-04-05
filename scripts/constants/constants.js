@@ -10,10 +10,13 @@ export const BUTTON_TYPES = {
   ADD: 'add',
   REMOVE: 'remove',
   OPEN_MODAL: 'open-modal',
-  CLOSE_MODAL: 'close-modal'
+  CLOSE_MODAL: 'close-modal',
+  CATEGORY: 'category'
 }
 
 export const ATTRIBUTES = {
   PRODUCT_ID: 'product-id',
   BUTTON_TYPE: 'button-type'
 }
+
+export const INITIAL_CATEGORY = 'all'
