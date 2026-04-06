@@ -1,18 +1,18 @@
-export class BurgerMenu  {
+export class BurgerMenu {
   selectors = {
     burgerButton: '[data-js-burger-button]',
     headerMenuList: '[data-js-header-menu-list]',
   }
 
   classes = {
-    burgerButtonOpen: 'is-open',
-    headerMenuListOpen: 'is-open',
+    burgerButtonOpen: 'header__burger-button--open',
+    headerMenuListOpen: 'header__menu-list--open',
   }
 
   constructor() {
     this.burgerButton = document.querySelector(this.selectors.burgerButton)
     this.headerMenuList = document.querySelector(this.selectors.headerMenuList)
-    if(this.burgerButton && this.headerMenuList) {
+    if (this.burgerButton && this.headerMenuList) {
       this.bindEvents()
     }
   }

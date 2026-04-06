@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.product-modal.is-open {
+.product-modal--open {
   display: flex;
 }
 
@@ -25,7 +25,9 @@
   position: relative;
   transform: translateY(0);
   opacity: 1;
-  transition: opacity var(--main-transition), transform var(--main-transition);
+  transition:
+    opacity var(--main-transition),
+    transform var(--main-transition);
   transition-behavior: allow-discrete;
 
   @starting-style {

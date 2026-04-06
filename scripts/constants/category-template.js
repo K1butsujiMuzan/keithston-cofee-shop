@@ -1,4 +1,4 @@
-import {BUTTON_TYPES} from "./constants.js";
+import { BUTTON_TYPES } from './constants.js'
 
 export const categoryTemplate = (value, isCurrent) => `
   <li class="products__categories-item">

@@ -1,4 +1,4 @@
-import {ATTRIBUTES, BUTTON_TYPES, imagePath} from "./constants.js";
+import { ATTRIBUTES, BUTTON_TYPES, imagePath } from './constants.js'
 
 export const basketTemplate = (id, title, price, image) => `
   <li class="basket__list-item">

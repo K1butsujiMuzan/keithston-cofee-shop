@@ -1,7 +1,7 @@
-import {ATTRIBUTES, BUTTON_TYPES} from "./constants.js";
+import { ATTRIBUTES, BUTTON_TYPES } from './constants.js'
 
 export const productModalButtonsTemplate = (id, quantity) => {
-  if(quantity === 0) {
+  if (quantity === 0) {
     return `
       <button
         class="product-modal__button main-button"

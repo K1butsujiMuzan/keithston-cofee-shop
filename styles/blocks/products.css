@@ -41,7 +41,7 @@
   }
 }
 
-.products__categories-button.active::after {
+.products__categories-button--active::after {
   content: '';
   display: block;
   position: absolute;
@@ -67,4 +67,3 @@
     justify-content: flex-start;
   }
 }
-

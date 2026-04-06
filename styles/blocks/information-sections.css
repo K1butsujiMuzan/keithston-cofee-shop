@@ -1,4 +1,4 @@
-.information-section{
+.information-section {
   padding-inline: 1rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,12 +11,12 @@
 }
 
 .first-order {
-  background-image: url("../../assets/images/first-order-background.png");
+  background-image: url('../../assets/images/first-order-background.png');
   padding-block: clamp(2rem, 1.194rem + 3.4389vw, 4.375rem);
 }
 
 .about-us {
-  background-image: url("../../assets/images/about-us.png");
+  background-image: url('../../assets/images/about-us.png');
   padding-block: clamp(2rem, 0.9819rem + 4.34389vw, 5rem);
 }
 

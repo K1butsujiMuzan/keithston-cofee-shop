@@ -1,4 +1,4 @@
-import {ATTRIBUTES, BUTTON_TYPES, imagePath} from "./constants.js";
+import { ATTRIBUTES, BUTTON_TYPES, imagePath } from './constants.js'
 
 export const cardTemplate = (id, title, price, image, quantity) => `
     <article class="products-container__card card" data-js-product-${id}>
@@ -28,16 +28,17 @@ export const cardTemplate = (id, title, price, image, quantity) => `
             </button>
             <span class="products-container__card-price">$${price}</span>
           </div>
-          ${quantity === 0 ?
-    `<button
+          ${
+            quantity === 0
+              ? `<button
               class="products-container__card-button main-button"
               type="button"
               ${ATTRIBUTES.PRODUCT_ID}="${id}"
               ${ATTRIBUTES.BUTTON_TYPE}="${BUTTON_TYPES.ADD}"
             >
               Add
-            </button>` :
-    `<div class="products-container__card-buttons">
+            </button>`
+              : `<div class="products-container__card-buttons">
               <button
                 class="products-container__card-button main-button"
                 type="button"
@@ -56,7 +57,7 @@ export const cardTemplate = (id, title, price, image, quantity) => `
                 +1
               </button>
             </div>`
-  }
+          }
         </div>
       </article>
 `

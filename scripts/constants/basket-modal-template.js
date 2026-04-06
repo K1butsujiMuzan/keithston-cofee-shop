@@ -1,4 +1,4 @@
-import {ATTRIBUTES, BUTTON_TYPES, imagePath} from "./constants.js";
+import { ATTRIBUTES, BUTTON_TYPES, imagePath } from './constants.js'
 
 export const basketModalTemplate = (id, title, price, image) =>
   `
@@ -30,7 +30,6 @@ export const basketModalTemplate = (id, title, price, image) =>
       </button>
     </li>
   `
-
 
 export const basketModalEmpty = `
   <li class="basket-modal__list-empty">The cart is empty :(</li>
