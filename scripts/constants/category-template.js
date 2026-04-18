@@ -3,7 +3,7 @@ import { BUTTON_TYPES } from './constants.js'
 export const categoryTemplate = (value, isCurrent) => `
   <li class="products__categories-item">
     <button
-      class="products__categories-button ${isCurrent ? 'active' : ''}"
+      class="products__categories-button ${isCurrent ? 'products__categories-button--active' : ''}"
       type="button"
       ${BUTTON_TYPES.CATEGORY}="${value}"
     >
